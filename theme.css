@@ -150,6 +150,12 @@ img {
         bottom: 1.7em;
     }
 
+    .tarjeta{
+        font-size: 20px;
+        margin-top:50px;
+        margin-bottom: 50px;
+    }
+
     .spotify {
         margin-top: 1em;
         width: 7.5em;
