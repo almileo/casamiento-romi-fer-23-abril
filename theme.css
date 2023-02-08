@@ -33,9 +33,33 @@ html, body{
     font-size: 15px;
 }
 
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+}
+
+#close {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
 
 .header{
-    /* background-image: url(./img/APAISADO.jpg); */
+    background-image: url(./img/Fondo\ casamiento\ LU\ Y\ LEO_cleanup.jpg);
     background-repeat: no-repeat;
     background-position: 50% 60%;
     background-attachment: scroll;
@@ -101,6 +125,14 @@ html, body{
 .details-heading{
     font-weight: bold;
     text-transform: uppercase;
+}
+
+.cuenta-texto {
+    font-size: 20px;
+}
+
+.hashtag{
+    font-size: 35px;
 }
 
 .fas {

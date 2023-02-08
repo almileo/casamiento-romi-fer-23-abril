@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Romi y Fer 23A</title>
+    <title>Romi y Fer 22A</title>
     <link rel="stylesheet" type="text/css" href="theme.css"> 
     <link rel="icon" href="./img/favicon-removebg-preview.png"> 
     <link rel="stylesheet" type="text/css" href="./icons/css/all.min.css"> 
@@ -24,42 +24,30 @@
     <a data-scroll class="fixed-button" href="#formulario" id="rsvpButton">Confirma</a> 
 
     <section class="section">
-      <h2 class="sub-heading">Queremos que nos acompañes en esta nueva etapa.</h2>
+      <h2 class="sub-heading">Vení al show más importante de nuestas vidas.</h2>
     </section>
 
     <div class="countdown">
-      <i class="fas fa-bell fas"></i>
-      <h3>Faltan!</h3>
+      <img src="./img/music (1).png" alt="">
+      <h3 class="cuenta-texto">Faltan!</h3>
       <div id="countdown"></div>
     </div>
-
-    <!-- <div>
-      <h3>Faltan!</h3>
-      <div id="counting">
-        <div id="days">
-          <p>Dias</p>
-        </div>
-        <div id="hours"></div>
-        <div id="minutes"></div>
-        <div id="seconds"></div>
-      </div>
-    </div> -->
 
     <section class="section">
       <h2 class="sub-heading">¿Cuándo?</h2>
       <div class="details">
-        <i class="fas fa-calendar-check"></i>
+        <img src="./img/calendar.png" alt="">
         <p>22 de Abril de 2023</p>
         <div class="atcb" style="display:none;">
           {
-            "name":"Casamiento Romi y Fer 19N",
+            "name":"Casamiento Romi y Fer 22A",
             "description":"¡Nos casamos y queremos compartirlo con vos!",
             "startDate":"2023-04-22",
             "endDate":"2023-04-23",
             "startTime":"20:30",
             "endTime":"05:00",
             "location":"Salon La Sofia, Avenida Juan D. Perón 1810, 4107 Yerba Buena, Argentina, Yerba Buena, Argentina ",
-            "label": "Agregalo a tu calendario",
+            "label": "Agregalo al calendario",
             "options":[
               "Apple",
               "Google",
@@ -85,47 +73,79 @@
       </div> -->
       <div class="details">
         <p><a rel="noopener" target="_blank" href="https://www.google.com/maps/place/La+Sof%C3%ADa+Event/@-26.8025215,-65.2937017,19z/data=!4m6!3m5!1s0x942242cef584728d:0xc446662db3cdd74!8m2!3d-26.8022365!4d-65.2931594!16s%2Fg%2F11csq7xljh">
-          <i class="fas fa-glass-cheers"></i>
+          <img src="./img/stage.png" alt="">
         </a>
         <h3 class="details-heading">Salón y Ceremonia</h3>
         <p>20:30 Hs.</p>
         <p><a rel="noopener" target="_blank" href="https://www.google.com/maps/place/La+Sof%C3%ADa+Event/@-26.8025215,-65.2937017,19z/data=!4m6!3m5!1s0x942242cef584728d:0xc446662db3cdd74!8m2!3d-26.8022365!4d-65.2931594!16s%2Fg%2F11csq7xljh"> <i class="fas fa-map-marker-alt" id="ubicacion"></i>  La Sofía</a>, Yerba Buena, Tucumán.</i> </p>
       </div>
       <div class="details">
-        <i class="fa-solid fa-gift fas"></i>
+        <img src="./img/music.png" alt="" id="open-modal">
         <h3 class="details-heading">Regalo</h3>
-        <p>El mejor regalo que podes hacernos es que nos acomopañes.</p>
-        <p class="tarjeta"><b>Costo de la tarjeta $8000</b></p>
-        <div>
-          <p>Banco Nación</p>
-          <p>CBU: </p>
-          <p>Alias: </p>
-        </div>
-        <div>
-          <p>Banco Brubank</p>
-          <p>CBU: </p>
-          <p id="formulario">Alias: </p>
+        <p id="formulario">El mejor regalo que podes hacernos es que estés con nosotros. Para eso hace click en el corazón.</p>
+
+        <!-- MODAL -->
+        <div id="modal-regalos" class="modal">
+          <div class="modal-content">
+            <span id="close">X</span>
+            <p class="tarjeta"><b>Costo de la tarjeta $10000</b></p>
+            <div>
+              <p>CBU: 1500002200005263658928</p>
+              <p>Alias: FER.BRAVO.10</p>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="details">
+
+      <div class="details" >
         <a href="https://forms.gle/epdHJeTkFLQuaYjQ8" target="_blank">
-          <i class="fas fa-check fas"></i>
+          <img src="./img/ticket.png" alt="" class="fas">
         </a>
-        <h3 class="details-heading">Confimra tu asistencia</h3>
-        <a href="https://forms.gle/epdHJeTkFLQuaYjQ8" target="_blank" class="cornfirma">Completa este formulario para saber si nos podes acompañar. Haciendo click en el check.</a>
+
+        <h3 class="details-heading">Confirmá tu asistencia</h3>
+        <a href="https://forms.gle/epdHJeTkFLQuaYjQ8" target="_blank" class="cornfirma">Completá este formulario para saber si nos podés acompañar. Haciendo click en los tickets.</a>
         <p>Te pedimos que lo completes antes del <b>10 de Abril de 2023</b>.</p>
       </div>
+
       <div class="details">
-        <a rel="noopener" target="_blank" href="https://open.spotify.com/playlist/1S9O6AWXmDPZl3LgBCx92i?si=D_5TC6tmSnurm5lJFhjefw&nd=1">
-          <i class="fas fa-music fas"></i>
+        <img src="./img/wedding-dress.png" alt="" id="open-modal">
+        <h3 class="details-heading">Dress Code</h3>
+        <p>Texto para dress code</p>
+
+        <!-- MODAL -->
+        <div id="modal-regalos" class="modal">
+          <div class="modal-content">
+            <span id="close">X</span>
+            <p class="tarjeta"><b>Costo de la tarjeta $10000</b></p>
+            <div>
+              <p>CBU: 1500002200005263658928</p>
+              <p>Alias: FER.BRAVO.10</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="details">
+        <a rel="noopener" target="_blank" href="https://open.spotify.com/playlist/7gqA2mZl9agAkSoqLaidj0?si=IQEvRhFXRP-cS8x9b1z-6Q">
+          <i class="fas fa-headphones"></i>
         </a>
-        <h3 class="details-heading">Fiesta</h3>
+        <h3 class="details-heading">Canciones</h3>
         <p>Podés agregar la canción que quieras escuchar en la fiesta. Haciendo click en el logo de abajo vas a la lista de canciones del casamiento.</p>
         <p>
-          <a rel="noopener" target="_blank" href="https://open.spotify.com/playlist/1S9O6AWXmDPZl3LgBCx92i?si=D_5TC6tmSnurm5lJFhjefw&nd=1">
+          <a rel="noopener" target="_blank" href="https://open.spotify.com/playlist/7gqA2mZl9agAkSoqLaidj0?si=IQEvRhFXRP-cS8x9b1z-6Q">
             <img src="./img/Spotify.png" alt="spotify" class="spotify">
           </a>
         </p>
+      </div>
+      <div class="details">
+        <a rel="noopener" target="_blank" href="https://www.instagram.com">
+          <i class="fas fa-hashtag"></i>
+        </a>
+        <h3 class="details-heading">Comparti</h3>
+        <p>Usá el hashtag en todas las fotos del casamiento que subas a Instagram</p>
+        <a target="_blank" href="https://www.instagram.com">
+          <p class="hashtag"> #SUHASHTAG </p>
+        </a>
       </div>
     </section>
     <script src="./js/smooth-scroll.polyfills.min.js"></script>
@@ -138,6 +158,7 @@
         rsvpButton.style.display = 'none';
       }   
     </script>
+    <!-- Countdown -->
     <script>
       var end = new Date('04/22/2023 8:00 PM');
       
@@ -166,14 +187,26 @@
               document.getElementById('countdown').innerHTML += hours + ' horas, ';
               document.getElementById('countdown').innerHTML += minutes + ' minutos y ';
               document.getElementById('countdown').innerHTML += seconds + ' segundos';
-
-              // document.getElementById('days').innerHTML = days ;
-              // document.getElementById('hours').innerHTML = hours ;
-              // document.getElementById('minutes').innerHTML = minutes ;
-              // document.getElementById('seconds').innerHTML = seconds;
           }
       
           timer = setInterval(showRemaining, 1000);
+      </script>
+      <!-- Modal -->
+      <script>
+        let modal = document.getElementById('modal-regalos');
+        let close = document.getElementById('close');
+        let open = document.getElementById('open-modal');
+
+        const openModal = function(){ 
+          modal.style.display = "flex"; 
+        }
+        const closeModal = function() { 
+          modal.style.display = "none"; 
+        }
+
+        open.addEventListener('click', openModal);
+
+        close.addEventListener('click', closeModal)
       </script>
   </body>
 </html>
