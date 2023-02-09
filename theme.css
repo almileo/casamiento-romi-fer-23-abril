@@ -125,6 +125,10 @@ html, body{
 .details{
     margin-bottom: 8em;
 }
+.molestos {
+    display: flex;
+    flex-direction: column;
+}
 .details-heading{
     font-weight: bold;
     text-transform: uppercase;

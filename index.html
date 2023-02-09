@@ -24,7 +24,7 @@
     <a data-scroll class="fixed-button" href="#formulario" id="rsvpButton">Confirma</a> 
 
     <section class="section">
-      <h2 class="sub-heading">Vení al show más importante de nuestas vidas. Vas a bailar como si fuera la última noche!</h2>
+      <h2 class="sub-heading">Vení al show más importante de nuestras vidas. Vas a bailar como si fuera la última noche!</h2>
     </section>
 
     <div class="countdown">
@@ -37,8 +37,8 @@
       <h2 class="sub-heading">¿Cuándo?</h2>
       <div class="details">
         <img src="./img/ticket.png" alt="" class="fas">
-        <p>El amor después del amor!</p>
-        <p>22 de Abril de 2023</p>
+        <p style="font-size:20px;">El amor después del amor!</p>
+        <p style="font-size:18px;"> 22 de Abril de 2023</p>
         <div class="atcb" style="display:none;">
           {
             "name":"Casamiento Romi y Fer 22A",
@@ -74,17 +74,24 @@
       </div> -->
       <div class="details">
         <p><a rel="noopener" target="_blank" href="https://www.google.com/maps/place/La+Sof%C3%ADa+Event/@-26.8025215,-65.2937017,19z/data=!4m6!3m5!1s0x942242cef584728d:0xc446662db3cdd74!8m2!3d-26.8022365!4d-65.2931594!16s%2Fg%2F11csq7xljh">
-          <img src="./img/cheers.png" alt="">
-          <img src="./img/diamond.png" alt="">
+          <div class="molestos">
+            <div>
+              <img src="./img/diamond.png" alt="">
+            </div>
+            <div>
+              <img src="./img/cheers.png" alt="">
+            </div>
+          </div>
         </a>
         <h3 class="details-heading">Salón y Ceremonia</h3>
-        <p>19:00 Hs.</p>
+        <p style="font-size:20px;">19:00 Hs.</p>
         <p><a rel="noopener" target="_blank" href="https://www.google.com/maps/place/La+Sof%C3%ADa+Event/@-26.8025215,-65.2937017,19z/data=!4m6!3m5!1s0x942242cef584728d:0xc446662db3cdd74!8m2!3d-26.8022365!4d-65.2931594!16s%2Fg%2F11csq7xljh"> <i class="fas fa-map-marker-alt" id="ubicacion"></i>  La Sofía</a>, Yerba Buena, Tucumán.</i> </p>
       </div>
       <div class="details">
         <img src="./img/gift.png" alt="" id="open-modal">
         <h3 class="details-heading">Regalo</h3>
         <p id="formulario"> EN ESTE DIA TAN ESPECIAL EL MEJOR REGALO QUE PUEDES HACERNOS ES TU PRESENCIA.</p>
+        <p>POR ESO TE PEDIMOS QUE HAGAS CLICK EN EL ICONO DEL REGALO</p>
 
         <!-- MODAL -->
         <div id="modal-regalos" class="modal">
@@ -105,14 +112,15 @@
         </a>
 
         <h3 class="details-heading">Confirmá tu asistencia</h3>
-        <a href="https://forms.gle/epdHJeTkFLQuaYjQ8" target="_blank" class="cornfirma">COMPLETA ESTE FOTMULARIO PARA SABER SI VENIS AL POGO MAS COPADO. HACIENDO CLICK EN LAS MANITOS.</a>
+        <a href="https://forms.gle/epdHJeTkFLQuaYjQ8" target="_blank" class="cornfirma">COMPLETA ESTE FORMULARIO PARA SABER SI VENIS AL POGO MAS COPADO. HACIENDO CLICK EN LAS MANITOS.</a>
         <p> TE PEDIMOS QUE LO COMPLETES ANTES DEL <b>10 DE MARZO DE 2023</b>.</p>
       </div>
 
       <div class="details">
         <img src="./img/wedding-dress.png" alt="" id="open-modal">
-        <h3 class="details-heading">UN VESTIDO Y UN AMOR</h3>
-        <p>Lo importante es que estés cómodo para cantar, saltar y bailar. ELEGANTE CHIC Y NO TE OLVIDES DE LOS PIES COMODOS.</p>
+        <h3 class="details-heading">DRESS CODE</h3>
+        <p>ELEGANTE CHIC Y NO TE OLVIDES DE LOS PIES COMODOS.</p>
+        <p>Veni preparado para cantar, saltar y bailar.</p>
 
         <!-- MODAL -->
         <div id="modal-regalos" class="modal">
@@ -147,7 +155,7 @@
         <p>Usá el # en todas las fotos previas y del momento del casamiento. GRACIAS TOTALES!!!</p>
       </div>
     </section>
-    <audio controls autoplay id="song">
+    <audio controls autoplay>
       <!-- <source src="https://www.youtube.com/watch?v=bo_efYhYU2A" type="audio/ogg"> -->
       <source src="./audio/SnapSave.io - Lady Gaga, Bradley Cooper - Shallow (from A Star Is Born) (Official Music Video) (128 kbps).mp3" type="audio/mpeg">
     Your browser does not support the audio element.
@@ -208,8 +216,6 @@
         const closeModal = function() { 
           modal.style.display = "none"; 
         }
-
-        song.play();
 
         open.addEventListener('click', openModal);
 
