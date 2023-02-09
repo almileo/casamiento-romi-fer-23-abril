@@ -147,7 +147,7 @@
         <p>Usá el # en todas las fotos previas y del momento del casamiento. GRACIAS TOTALES!!!</p>
       </div>
     </section>
-    <audio controls autoplay >
+    <audio controls autoplay id="song">
       <!-- <source src="https://www.youtube.com/watch?v=bo_efYhYU2A" type="audio/ogg"> -->
       <source src="./audio/SnapSave.io - Lady Gaga, Bradley Cooper - Shallow (from A Star Is Born) (Official Music Video) (128 kbps).mp3" type="audio/mpeg">
     Your browser does not support the audio element.
@@ -200,6 +200,7 @@
         let modal = document.getElementById('modal-regalos');
         let close = document.getElementById('close');
         let open = document.getElementById('open-modal');
+        let song = document.getElementById('song')
 
         const openModal = function(){ 
           modal.style.display = "flex"; 
@@ -208,9 +209,12 @@
           modal.style.display = "none"; 
         }
 
+        song.play();
+
         open.addEventListener('click', openModal);
 
         close.addEventListener('click', closeModal)
+
       </script>
   </body>
 </html>
