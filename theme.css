@@ -119,6 +119,9 @@ html, body{
     color: #62a868;
     margin-top: 2em;
 }
+#open-modal{
+    margin-left: 15px;
+}
 .details{
     margin-bottom: 8em;
 }
