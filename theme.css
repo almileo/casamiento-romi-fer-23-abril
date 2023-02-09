@@ -132,7 +132,7 @@ html, body{
 }
 
 .hashtag{
-    font-size: 35px;
+    font-size: 35px !important;
 }
 
 .fas {
